@@ -1,40 +1,8 @@
-## PrustDB 🦀🔑
-
-#### Peer to Peer Key-Value Database in Rust 
+### Peer to Peer Key-Value Database in Rust 
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![P2P](https://img.shields.io/badge/P2P-Network-blue?style=for-the-badge)
 ![Database](https://img.shields.io/badge/Database-KeyValue-green?style=for-the-badge)
-
-A high-performance, peer-to-peer key-value database implemented in Rust. This project aims to provide a distributed, scalable, and efficient solution for storing and retrieving data in a decentralized network.
-
-## 📚 Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Architecture](#architecture)
-- [Performance](#performance)
-- [Security](#security)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-## ✨ Features
-
-- 🚀 High-performance key-value storage
-- 🌐 Peer-to-peer network architecture
-- 🔒 Secure data transmission with end-to-end encryption
-- 🔄 Automatic data replication and load balancing
-- 📊 Built-in metrics and monitoring
-- 🧪 Comprehensive test suite
-- 🔍 Efficient data querying and indexing
-- 🔧 Configurable consistency levels
-- 📈 Horizontal scalability
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -46,7 +14,7 @@ A high-performance, peer-to-peer key-value database implemented in Rust. This pr
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/p2p_key_db.git
+   git clone https://github.com/dinxsh/prustdb.git
    cd p2p_key_db
    ```
 
@@ -60,7 +28,7 @@ A high-performance, peer-to-peer key-value database implemented in Rust. This pr
    cargo test
    ```
 
-## 🔧 Usage
+### Usage
 
 1. Start a node:
    ```
@@ -90,9 +58,7 @@ A high-performance, peer-to-peer key-value database implemented in Rust. This pr
    }
    ```
 
-For more detailed usage instructions, API documentation, and examples, please refer to our [documentation](https://docs.prustdb.io).
-
-## 🏗️ Architecture
+### Architecture
 
 Our P2P Key-Value Database is built on a distributed hash table (DHT) architecture, similar to Kademlia. Here's a high-level overview:
 
@@ -104,9 +70,9 @@ Our P2P Key-Value Database is built on a distributed hash table (DHT) architectu
 
 4. **Lookup Protocol**: To find a key, nodes perform iterative lookups, querying progressively closer nodes until the key is found or the closest nodes are reached.
 
-5. **Data Replication**: To ensure data availability and fault tolerance, key-value pairs are replicated across multiple nodes using a configurable replication factor.
+5. **Data Replication**: Key-value pairs are replicated across multiple nodes using a configurable replication factor to ensure data availability and fault tolerance.
 
-6. **Network Joining**: New nodes join the network by bootstrapping through a known peer, then performing lookups for their own ID to populate their routing table.
+6. **Network Joining**: New nodes join the network by bootstrapping through a known peer, and then performing lookups for their ID to populate their routing table.
 
 7. **Load Balancing**: The DHT naturally distributes data and lookup load across the network, with additional active balancing mechanisms for hotspots.
 
@@ -116,7 +82,7 @@ Our P2P Key-Value Database is built on a distributed hash table (DHT) architectu
 
 10. **Compression**: Data is compressed before storage and transmission to reduce storage requirements and network usage.
 
-## 🚀 Performance
+### Performance
 
 PrustDB is designed for high performance:
 
@@ -126,7 +92,7 @@ PrustDB is designed for high performance:
 - Optimized data structures for fast lookups and insertions
 - Benchmarking suite for continuous performance monitoring
 
-## 🔒 Security
+### Security
 
 Security is a top priority for PrustDB:
 
@@ -136,18 +102,12 @@ Security is a top priority for PrustDB:
 - Sandboxing of untrusted code execution
 - Detailed security documentation and best practices
 
-## 🤝 Contributing
+### Contributing
 
 We welcome contributions from the community! Please check out our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started, our code of conduct, and the process for submitting pull requests.
 
-## 📄 License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- The Rust community for their excellent tools and libraries
-- The authors of the Kademlia paper for the foundational concepts
-- All our contributors and users for their support and feedback
-
-For the latest updates, follow us on [Twitter](https://twitter.com/dinescodes) and star our [GitHub repository](https://github.com/dinxsh/prustdb)
+### For the latest updates, follow us on [Twitter](https://twitter.com/dinescodes) and star our [GitHub repository](https://github.com/dinxsh/prustdb)
