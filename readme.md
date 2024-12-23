@@ -1,7 +1,8 @@
-### Peer to Peer Key-Value Database in Rust 
+#### prustDB
+peer-to-peer key-value database in rust 
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![P2P](https://img.shields.io/badge/P2P-Network-blue?style=for-the-badge)
+![P2P](https://img.shields.io/badge/p2p-network-blue?style=for-the-badge)
 ![Database](https://img.shields.io/badge/Database-KeyValue-green?style=for-the-badge)
 
 ### Prerequisites
